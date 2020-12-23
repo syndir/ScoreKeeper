@@ -1,0 +1,61 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+
+
+
+    <!-- "New Single Game" -->
+    <group android:id="@+id/grpnew">
+        <!-- "New Game" -->
+        <item
+            android:id="@+id/action_bar_new_game"
+            android:icon="@drawable/ic_note_add_black_24dp"
+            android:title="@string/action_new_game"
+            app:showAsAction="never" />
+        <!-- "New Team Game" -->
+        <item
+            android:id="@+id/action_bar_new_team_game"
+            android:title="@string/new_team_game"
+            app:showAsAction="never" />
+
+    </group>
+
+
+    <!-- Overflow menu -->
+
+
+    <group android:id="@+id/grphist">
+    <!-- "Save Game" -->
+ <!--   <item
+        android:id="@+id/action_bar_save_game"
+        android:title="@string/save_game"
+        app:showAsAction="never" />
+        -->
+
+    <!-- "View History" -->
+<!--    <item
+        android:id="@+id/action_viewhistory"
+        android:title="@string/action_view_history"
+        app:showAsAction="never" />
+
+-->
+    </group>
+
+    <!-- Settings -->
+    <item android:id="@+id/action_settings"
+        android:title="@string/action_settings"
+        app:showAsAction="never"/>
+
+    <!-- Contact -->
+    <item android:id="@+id/action_contact_us"
+        android:title="@string/contact_us"
+        app:showAsAction="never" />
+
+    <!-- "Exit" -->
+    <item
+        android:id="@+id/action_exit"
+        android:title="@string/action_exit"
+        app:showAsAction="never" />
+</menu>

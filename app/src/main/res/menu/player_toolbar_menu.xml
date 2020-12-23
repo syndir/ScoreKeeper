@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/player_toolbar_sort_players"
+        android:icon="@drawable/ic_sort_black_24dp"
+        android:title="@string/sort_players"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/player_toolbar_add_player"
+        android:icon="@drawable/ic_add_black_24dp"
+        android:title="@string/add_player"
+        app:showAsAction="ifRoom" />
+
+</menu>

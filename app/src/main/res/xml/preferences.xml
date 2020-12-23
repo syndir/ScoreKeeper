@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="@string/settings_autosort_cat">
+        <CheckBoxPreference
+            android:key="@string/settings_autosort_enabled_key"
+            android:defaultValue="false"
+            android:title="@string/settings_autosort_enabled_title"
+            android:summary="@string/settings_autosort_enabled_summary"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/settings_ffa_cat">
+        <ListPreference
+            android:key="@string/settings_ffa_sort_method_key"
+            android:title="@string/settings_ffa_sort_method_title"
+            android:defaultValue="@string/settings_sort_method_score_hi_lo"
+            android:entries="@array/sort_method"
+            android:entryValues="@array/sort_method"
+            android:summary="%s" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/settings_team_settings_cat">
+        <ListPreference
+            android:defaultValue="@string/settings_team_score_track_team"
+            android:entries="@array/team_score_track_method"
+            android:entryValues="@array/team_score_track_method"
+            android:key="@string/settings_team_score_tracking_method_key"
+            android:title="@string/settings_team_score_tracking_method_title"
+            android:summary="%s"/>
+        <ListPreference
+            android:key="@string/settings_team_sort_method_key"
+            android:title="@string/settings_team_sort_method_title"
+            android:defaultValue="@string/settings_sort_method_score_hi_lo"
+            android:entries="@array/sort_method"
+            android:entryValues="@array/sort_method"
+            android:summary="%s" />
+        <ListPreference
+            android:key="@string/settings_team_members_sort_method_key"
+            android:title="@string/settings_team_members_sort_method_title"
+            android:defaultValue="@string/settings_sort_method_name_a_z"
+            android:entries="@array/sort_method"
+            android:entryValues="@array/sort_method"
+            android:summary="%s" />
+    </PreferenceCategory>
+
+
+    <PreferenceCategory android:title="@string/settings_values_cat" android:key="@string/settings_values_cat">
+        <ListPreference
+            android:key="@string/settings_score_edit_mode_key"
+            android:title="@string/settings_score_edit_mode_title"
+            android:defaultValue="@string/settings_score_edit_mode_absolute"
+            android:entries="@array/score_edit_modes"
+            android:entryValues="@array/score_edit_modes"
+            android:summary="%s" />
+        <EditTextPreference
+            android:defaultValue="0"
+            android:inputType="numberSigned"
+            android:key="@string/settings_starting_value_key"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="@string/settings_starting_value_title" />
+        <EditTextPreference
+            android:defaultValue="-1000"
+            android:inputType="numberSigned"
+            android:key="@string/settings_min_value_key"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="@string/settings_min_value_title" />
+        <EditTextPreference
+            android:defaultValue="1000"
+            android:inputType="numberSigned"
+            android:key="@string/settings_max_value_key"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="@string/settings_max_value_title" />
+        <EditTextPreference
+            android:defaultValue="1"
+            android:inputType="numberSigned"
+            android:key="@string/settings_step_size_key"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="@string/settings_step_size_title" />
+    </PreferenceCategory>
+
+
+</PreferenceScreen>

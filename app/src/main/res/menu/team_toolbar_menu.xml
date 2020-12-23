@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/team_toolbar_sort_teams"
+        android:icon="@drawable/ic_sort_black_24dp"
+        android:title="@string/sort_teams"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/team_toolbar_add_team"
+        android:icon="@drawable/ic_add_black_24dp"
+        android:title="@string/add_team"
+        app:showAsAction="ifRoom" />
+
+</menu>
